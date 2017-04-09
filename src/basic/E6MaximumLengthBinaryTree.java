@@ -1,4 +1,4 @@
-package easyStep;
+package basic;
 
 
 /*TAGS: Tree, DFS(Depth-First-Search)*/
@@ -18,7 +18,9 @@ public class E6MaximumLengthBinaryTree {
 		root.right.right = new TreeNode(10);
 		root.right.left = new TreeNode(10);
 		root.right.left.right = new TreeNode(10);
-		System.out.println(maxDepth(root));
+		root.right.left.right.right = new TreeNode(1);
+		root.right.left.right.left = new TreeNode(1);
+		root.print();
 	}
 }
 

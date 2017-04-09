@@ -1,4 +1,4 @@
-package easyStep;
+package basic;
 
 public class E8MinimumAbsoluteDifferenceInBST {
 
