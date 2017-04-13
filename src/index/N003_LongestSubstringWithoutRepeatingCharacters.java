@@ -36,6 +36,7 @@ public class N003_LongestSubstringWithoutRepeatingCharacters {
         int max=0;
         for (int i=0, j=0; i<s.length(); ++i) {
             if (map.containsKey(s.charAt(i))){
+            	//j is first substring
                 j = Math.max(j,map.get(s.charAt(i))+1);
             }
             map.put(s.charAt(i),i);
@@ -48,7 +49,7 @@ public class N003_LongestSubstringWithoutRepeatingCharacters {
 
 /**
 	When to use HashMap?
-	1. No Order (You cannot retrieve the itme of the list 
+	1. No Order (You cannot retrieve the item of the list 
 	2. 
 	
 */
